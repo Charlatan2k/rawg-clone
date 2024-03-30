@@ -1,0 +1,29 @@
+.main-container {
+	display: grid;
+	grid-template-rows: 108px auto auto auto auto auto;
+	grid-template-columns: 220px auto auto auto auto;
+	grid-template-areas:
+		'header header header header header'
+		'options   title title title title'
+		'options  cards	cards	cards	cards'
+		'options cards cards cards cards'
+		'options cards cards cards cards'
+		'options cards cards cards cards';
+	min-height: 100vh;
+}
+
+.header {
+	grid-area: header;
+}
+
+.side {
+	grid-area: options;
+}
+
+.games {
+	grid-area: cards;
+}
+
+.titles {
+	grid-area: title;
+}
